@@ -5,7 +5,7 @@ from bot import DB_HOST, DB_USER,DB_PASSWORD,DB_NAME
 
 
 # MySQL connection string format:
-DATABASE_URI = f'mysql+mysqlconnector://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}'
+DATABASE_URI = f'mysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}'
 
 def start() -> scoped_session:
     
